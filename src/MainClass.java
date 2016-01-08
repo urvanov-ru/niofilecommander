@@ -1,4 +1,8 @@
-
+/**
+ * Главный файл niofilecommander. С него начинается выполнение.
+ * @author Урванов Федор
+ * @see <a href="http://urvanov.ru">http://urvanov.ru</a>
+ */
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -15,7 +19,6 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
