@@ -1,3 +1,4 @@
+package ru.urvanov.javaexamples.niofilecommander;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;

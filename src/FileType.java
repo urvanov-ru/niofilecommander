@@ -1,5 +1,0 @@
-
-
-enum FileType {
-    DIRECTORY, FILE
-};

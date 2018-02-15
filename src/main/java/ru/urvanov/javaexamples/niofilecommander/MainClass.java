@@ -1,3 +1,4 @@
+package ru.urvanov.javaexamples.niofilecommander;
 /**
  * Главный файл niofilecommander. С него начинается выполнение.
  * @author Урванов Федор
