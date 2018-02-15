@@ -120,9 +120,6 @@ class CopyFrame extends JFrame {
                 private Path destinationPath;
                 private BasicFileAttributes attributes;
 
-                CopyFileInfo() {
-                }
-
                 CopyFileInfo(Path sourcePath, Path destinationPath, BasicFileAttributes sourceAttributes) {
                     this.sourcePath = sourcePath;
                     this.destinationPath = destinationPath;
@@ -243,10 +240,6 @@ class CopyFrame extends JFrame {
                     private Path sourcePath;
                     private long size;
 
-                    CopyInfo() {
-                    }
-
-                    ;
                     CopyInfo(Path sourcePath, long size) {
                         this.sourcePath = sourcePath;
                         this.size = size;

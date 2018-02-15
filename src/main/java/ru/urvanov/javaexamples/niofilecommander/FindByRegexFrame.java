@@ -30,7 +30,12 @@ import javax.swing.SwingWorker;
  */
 class FindByRegexFrame extends JFrame {
 
-    private JLabel regexLabel;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8350369985003185575L;
+	
+	private JLabel regexLabel;
     private JEditorPane regexEditorPane;
     private JCheckBox canonEqCheckBox;
     private JCheckBox caseInsensitiveCheckBox;
@@ -46,8 +51,7 @@ class FindByRegexFrame extends JFrame {
 
     private JButton selectByRegexButton;
     private JButton findByRegexButton;
-    private JButton cancelButton;
-        
+    
     FindByRegexFrame() {
         gbl = new GridBagLayout();
         Container container = this.getContentPane();
@@ -109,7 +113,7 @@ class FindByRegexFrame extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
         
-        resultsList = new JList<>(new DefaultListModel());
+        resultsList = new JList<>(new DefaultListModel<String>());
         resultsScrollPane = new JScrollPane(resultsList);
         GridBagConstraints pnl1Constraints = new GridBagConstraints();
         pnl1Constraints.anchor = GridBagConstraints.NORTHWEST;
@@ -200,7 +204,9 @@ class FindByRegexFrame extends JFrame {
             protected void process(List<FileInfo> fileInfos) {
                 
                 fileInfos.stream().forEach(fi->{
-                    ((DefaultListModel)resultsList.getModel()).addElement(fi.getPath().toAbsolutePath().toString());
+                    ((DefaultListModel<String>) resultsList.getModel())
+                            .addElement(fi.getPath().toAbsolutePath()
+                                    .toString());
                 });
             }
             

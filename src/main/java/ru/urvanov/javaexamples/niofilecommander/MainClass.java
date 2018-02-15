@@ -186,7 +186,7 @@ public class MainClass {
                                             + path.toString() + "\"?",
                                     "Warning", JOptionPane.YES_NO_OPTION,
                                     JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION) {
-                                List<Path> paths = new ArrayList();
+                                List<Path> paths = new ArrayList<>();
                                 paths.add(path);
                                 deletePaths(paths);
                             }
@@ -198,7 +198,7 @@ public class MainClass {
                                         + fileInfos.size() + " files?",
                                 "Warning", JOptionPane.YES_NO_OPTION,
                                 JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION) {
-                            List<Path> paths = new ArrayList();
+                            List<Path> paths = new ArrayList<>();
                             for (FileInfo fileInfo : fileInfos) {
                                 path = fileInfo.getPath();
                                 paths.add(path);
