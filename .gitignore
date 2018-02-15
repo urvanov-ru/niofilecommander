@@ -3,3 +3,4 @@ manifest.mf
 nbproject
 build
 /dist/
+/target/
