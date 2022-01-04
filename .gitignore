@@ -4,3 +4,8 @@ nbproject
 build
 /dist/
 /target/
+.project
+.classpath
+/.settings/
+/.idea/
+/bin/
