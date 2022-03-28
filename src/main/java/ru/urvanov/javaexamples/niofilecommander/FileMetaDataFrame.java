@@ -1136,7 +1136,7 @@ class UserDefinedFileAttributesPanel extends JPanel {
             List<String> existNames = view.list();
             DefaultTableModel tableModel = (DefaultTableModel) table.getModel();
             @SuppressWarnings("unchecked")
-            Vector<Vector<String>> data = tableModel.getDataVector();
+            Vector<Vector> data = tableModel.getDataVector();
             for (int rowIndex = 0; rowIndex < data.size(); rowIndex++) {
                 Vector<String> row = data.elementAt(rowIndex);
                 String name = row.elementAt(0);
